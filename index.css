@@ -1,0 +1,83 @@
+
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ .container {
+    background: #1B244A;
+    width: 575px;
+    height: 385px;
+    border : solid red;
+display: flex;
+justify-content: space-around;  
+}
+
+h3 {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+color: #EEEEEE; 
+margin-bottom: 21px;
+width: 149px; 
+height: 36px;  
+line-height: 36px;
+text-align: center;
+}
+
+.display_score {
+background: #080001;
+margin-bottom: 26px;
+width: 155px;
+height:120px;
+left: 82px; 
+}
+
+
+
+
+.display_points_text {
+    height: 120px;
+    left: 100px;
+    font-family: 'cursed timer ulil', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    text-align: center;
+    color: #f94f6d;
+    margin: 0;
+    }
+    
+
+
+
+
+
+.add-points {
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+    left: 337px;
+    top: 271px;
+    border: 2px solid #9aabd8;
+    border-radius: 5px;
+    background: none;
+    color: #9aabd8;
+    margin-right: 9px;
+}
+
+.add {
+width: 30px;
+height: 25.77px;
+left: 89px;
+top: 280px;
+font-family: 'cursed timer ulil';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+} */ */
