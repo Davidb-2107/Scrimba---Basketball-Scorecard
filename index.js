@@ -1,60 +1,44 @@
 
+const containerH = document.querySelector("#container-home"); //reference the div container
+const containerG = document.querySelector("#container-guest")
 
 
-    //#SELECT elements//
-//##SELECT buttons
-    //###Home buttons
-const buttonH1 = document.querySelectorAll("button.home.add1");
-const buttonH2 = document.querySelectorAll("button.home.add2");
-const buttonH3 = document.querySelectorAll("button.home.add3");
-    //###Guest buttons
-const buttonG1 = document.querySelectorAll("button.guest.add1");
-const buttonG2 = document.querySelectorAll("button.guest.add2");
-const buttonG3 = document.querySelectorAll("button.guest.add3");
+containerH.addEventListener("click", (e) => {
+    const displayPointsH = document.querySelector(".display_points_text.H");
+    let scoreH = 0;
+    let target = e.target.classList;
+    const targetContH = target.contains("home");
 
-
-//##SELECT displayed score
-const displayPointsH = document.querySelector(".display_points_text.H");
-const displayPointsG = document.querySelector(".display_points_text.G");
-
-
-//#GLOBAL variable
-let scoreG = 0;
-let scoreH = 0;
-
-
-
-buttonH1.forEach(buttonH1 => buttonH1.addEventListener('click',() => {
-     scoreH ++ ;
-     displayPointsH.textContent = scoreH;
- }));
-
- buttonH2.forEach(buttonH2 => buttonH2.addEventListener('click',() => {
-     console.log(buttonH2)
-     scoreH += 2;
-     displayPointsH.textContent = scoreH;
- }));
-
-buttonH3.forEach(buttonH3 => buttonH3.addEventListener('click',() => {
-    scoreH += 3;
+    if (target.contains("add1") && targetContH) {
+        scoreH ++ ;
+    } else if (target.contains("add2") && targetContH) {
+        scoreH += 2;
+        
+    } else if (target.contains("add3") && targetContH) {
+        scoreH += 3;
+        
+    };
     displayPointsH.textContent = scoreH;
-}));
+});
 
+containerG.addEventListener("click", (e) => {
+    const displayPointsG = document.querySelector(".display_points_text.G");
+    let scoreG = 0;
+    let target = e.target.classList;
+    console.log(e.target)
+    const targetContG = target.contains("guest");
 
- buttonG1.forEach(buttonG1 => buttonG1.addEventListener('click',() => {
-     scoreG ++ ;
-     displayPointsG.textContent = scoreG;
- }));
-
- buttonG2.forEach(buttonG2 => buttonG2.addEventListener('click',() => {
-     scoreG += 2;
-     displayPointsG.textContent = scoreG;
- }));
-
-buttonG3.forEach(buttonG3 => buttonG3.addEventListener('click',() => {
-     scoreG += 3;
-     displayPointsG.textContent = scoreG;
- }));
+    if (target.contains("add1") && targetContG) {
+        scoreG ++ ;
+    } else if (target.contains("add2") && targetContG) {
+        scoreG += 2;
+        
+    } else if (target.contains("add3") && targetContG) {
+        scoreG += 3;
+        
+    };
+    displayPointsG.textContent = scoreG;
+});
 
 
 

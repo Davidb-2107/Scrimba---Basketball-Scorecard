@@ -1,17 +1,22 @@
-
 /* GENERAL STYLING */
 body {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
  .container {
-    background: #1B244A;
-    width: 575px;
-    height: 385px;
-    border : solid red;
+ background: #1B244A;
+ width: 575px;
+ height: 385px;
+ border : solid red;
 display: flex;
 justify-content: space-around;  
+}
+
+
+.container-home {
+    margin-left: 0;
 }
 
 h3 {
@@ -20,9 +25,9 @@ font-style: normal;
 font-weight: 700;
 font-size: 40px;
 color: #EEEEEE; 
+margin-top: 68px;
 margin-bottom: 21px;
 width: 149px; 
-height: 36px;  
 line-height: 36px;
 text-align: center;
 }
@@ -34,7 +39,6 @@ width: 155px;
 height:120px;
 left: 82px; 
 }
-
 
 
 
@@ -52,10 +56,7 @@ left: 82px;
     }
     
 
-
-
-
-
+/* Styling buttons */
 .add-points {
     box-sizing: border-box;
     width: 45px;
@@ -67,17 +68,18 @@ left: 82px;
     background: none;
     color: #9aabd8;
     margin-right: 9px;
+    font-family: 'cursed timer ulil';
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
 }
 
+/* Styling +1/+2/+3 */
 .add {
 width: 30px;
 height: 25.77px;
 left: 89px;
 top: 280px;
-font-family: 'cursed timer ulil';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-text-align: center;
 }
